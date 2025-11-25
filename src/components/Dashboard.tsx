@@ -159,13 +159,16 @@ export default function Dashboard() {
               )}
             </div>
           ) : (
-            <div className="bg-white p-8 rounded-lg shadow text-center text-gray-500">
+            <div className="bg-white p-8 rounded-lg  w-full  flex justify-center items-center shadow text-center text-gray-500">
               <p>Select an Electrolyzer ID to view element parts</p>
             </div>
           )}
         </div>
       </div>
-      <div className="flex gap-4 justify-end">
+
+      {
+        selectedElements.length > 0 && 
+         <div className="flex gap-4 justify-end">
         <button
           onClick={handleSendToRepair}
           className="px-8 py-2 bg-black text-white rounded hover:bg-gray-800 transition-colors font-medium"
@@ -179,6 +182,8 @@ export default function Dashboard() {
           Ready to Assemble
         </button>
       </div>
+      }
+     
       {confirmModal.isOpen && (
         <ConfirmationModal
           action={confirmModal.action}
