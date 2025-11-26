@@ -29,7 +29,7 @@ export default function ElementPartsTable({
         ? `Ready for Repair${
             status.checklistCount ? ` (${status.checklistCount})` : ""
           }`
-        : "Ready for Assembly";
+        : `Ready for Assembly (${status.checklistCount})`;
 
     return (
       <span

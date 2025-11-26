@@ -47,7 +47,7 @@ export default function ChecklistAndComments({
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <h3 className="text-lg font-semibold text-gray-800 mb-4">
           Cut Out Comments
         </h3>
@@ -57,7 +57,7 @@ export default function ChecklistAndComments({
           rows={3}
           disabled
         />
-      </div>
+      </div> */}
 
       <div>
         <h3 className="text-lg font-semibold text-gray-800 mb-4">
